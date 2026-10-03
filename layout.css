@@ -1,0 +1,99 @@
+            body {
+                background: #f2f3f4;
+                margin: 3; 
+                font-family: 'Lucida Sans', 'Lucida Sans Regular';
+
+                display: grid;
+                grid-template-columns: 1fr 3fr 1fr;
+                grid-template-rows: 1fr 5fr 1fr;
+                grid-template-areas: 
+                    "header header header"
+                    "extra main sidebar"
+                    "footer footer footer";
+                gap: 5px;
+
+                width: 1365;
+                height: 768px;
+            }
+
+            header, footer, main, aside, .header_wc, .footer_wc, .main_wc, .sidebar_wc, .cont_m, .extra, .extra_wc{
+                text-align: center;
+                margin: 1px;
+            }
+
+            header {
+                grid-area: header;
+                background: #7c6e7f;
+            }
+            
+            footer {
+                grid-area: footer;
+                background: #655967;
+            }
+
+            main { 
+                grid-area: main;
+                background: #4d4c5c;      
+            }
+
+            aside {
+                grid-area: sidebar;
+                background: #808080;
+            }
+
+            .extra{
+                grid-area: extra;
+                background: #3e3d53;
+            }
+
+
+            .header_wc, .footer_wc, .main_wc, .sidebar_wc, .extra_wc{
+                border: black solid 1px;
+            }
+
+            .body_wc {
+                background: #4d4c5c;
+                margin: 10px; 
+                font-family:cursive;
+
+
+                display: grid;
+                grid-template-columns: 1fr 3fr 1fr;
+                grid-template-rows: 1fr 5fr 15fr 5fr;
+                grid-template-areas: 
+                    "cont_m cont_m cont_m"
+                    "header header header"
+                    "extra main sidebar"
+                    "footer footer footer";
+                gap: 1px;
+            }
+
+            .cont_m{
+                grid-area: cont_m;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular';
+            }
+
+            .header_wc {
+                grid-area: header;
+                background: #7c6e7f;
+            }
+            
+            .footer_wc {
+                grid-area: footer;
+                background: #655967;
+            }
+
+            .main_wc { 
+                grid-area: main;
+                background: #4d4c5c;
+            }
+
+            .sidebar_wc {
+                grid-area: sidebar;
+                background: #808080;
+            }
+
+            .extra_wc{
+                grid-area: extra;
+                background: #3e3d53;
+            }
